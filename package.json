@@ -76,6 +76,12 @@
     "semi": false,
     "singleQuote": true
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
